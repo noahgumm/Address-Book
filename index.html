@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<!--
+    Author: Noah Gumm
+    Date: 10/02/2019
+-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Address Book</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="mainStylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="leftContainerDiv">
+        <div id="displayDiv">
+            
+        </div>
+        <form id="addressForm">
+            <div class="form-group">
+                <label for="firstNameInput">First Name</label>
+                <input type="text" class="form-control" id="firstNameInput" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="lastNameInput">Last Name</label>
+                <input type="text" class="form-control" id="lastNameInput" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="phoneInput">Phone</label>
+                <input type="email" class="form-control" id="phoneInput" placeholder="1-(111)-111-1111">
+            </div>
+            <div class="form-group">
+                <label for="emailInput">Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="email@otc.edu">
+            </div>
+            <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div id="rightContainerDiv">
+        <h2>Address Book</h2>
+        <ul id="addressList"></ul>
+    </div>
+
+    <script src="mainScript.js"></script>
+</body>
+</html>
